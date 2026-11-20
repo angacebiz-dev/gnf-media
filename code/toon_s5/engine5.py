@@ -78,7 +78,7 @@ def style_char(im):
     if k == "rim":                    # B: night silhouette with warm rim light; eyes/teeth stay bright
         a = im.split()[3]; arr = np.asarray(im, np.float32)
         lum = arr[..., :3].mean(-1); keep = (lum > 225)[..., None]
-        dark = arr[..., :3] * 0.22 + np.array([10, 12, 30])
+        dark = arr[..., :3] * np.array([0.44, 0.48, 0.62]) + np.array([6, 10, 28])
         rgb = np.where(keep, arr[..., :3] * 0.9, dark)
         out = Image.fromarray(np.dstack([rgb, arr[..., 3]]).astype(np.uint8), "RGBA")
         sh = ImageChops.offset(a, 5, 4); rim = ImageChops.subtract(a, sh).filter(ImageFilter.GaussianBlur(1))
