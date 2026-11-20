@@ -1,0 +1,120 @@
+{
+ "voice": "am_michael",
+ "speed": 0.9,
+ "beats": [
+  {
+   "id": "b00",
+   "say": "Before there was anything... there was God.",
+   "img": "c01_void"
+  },
+  {
+   "id": "b01",
+   "say": "In the beginning God created the heavens and the earth.",
+   "verse": "Genesis 1:1",
+   "img": "c01_void"
+  },
+  {
+   "id": "b02",
+   "say": "Now the earth was formless and void, and darkness was over the surface of the deep.",
+   "verse": "Genesis 1:2",
+   "img": "c02_spirit"
+  },
+  {
+   "id": "b03",
+   "say": "And the Spirit of God was hovering over the surface of the waters.",
+   "verse": "Genesis 1:2",
+   "img": "c02_spirit"
+  },
+  {
+   "id": "b04",
+   "say": "Then God spoke.",
+   "img": "m1"
+  },
+  {
+   "id": "b05",
+   "say": "And God said, “Let there be light,” and there was light.",
+   "verse": "Genesis 1:3",
+   "img": "c03_light"
+  },
+  {
+   "id": "b06",
+   "say": "On the second day, He spread out the sky above the waters.",
+   "img": "c04_sky"
+  },
+  {
+   "id": "b07",
+   "say": "On the third day, the seas pulled back... and dry land rose up.",
+   "img": "c05_land"
+  },
+  {
+   "id": "b08",
+   "say": "Then God said, “Let the earth bring forth vegetation”",
+   "verse": "Genesis 1:11",
+   "img": "c06_green"
+  },
+  {
+   "id": "b09",
+   "say": "On the fourth day, He hung the sun and the moon in place.",
+   "img": "c07_lights"
+  },
+  {
+   "id": "b10",
+   "say": "And He made the stars as well.",
+   "verse": "Genesis 1:16",
+   "img": "c07_lights"
+  },
+  {
+   "id": "b11",
+   "say": "On the fifth day, the oceans came alive, and the skies filled with wings.",
+   "img": "c08_sea"
+  },
+  {
+   "id": "b12",
+   "say": "On the sixth day, the land filled with creatures of every kind.",
+   "img": "c09_animals"
+  },
+  {
+   "id": "b13",
+   "say": "And then He made us.",
+   "img": "c10_man"
+  },
+  {
+   "id": "b14",
+   "say": "So God created man in His own image; in the image of God He created him; male and female He created them.",
+   "verse": "Genesis 1:27",
+   "img": "c10_man"
+  },
+  {
+   "id": "b15",
+   "say": "And God looked upon all that He had made, and indeed, it was very good.",
+   "verse": "Genesis 1:31",
+   "img": "c11_good"
+  },
+  {
+   "id": "b16",
+   "say": "And on the seventh day, He rested.",
+   "img": "c12_rest"
+  },
+  {
+   "id": "b17",
+   "say": "Maybe your life feels formless right now. Empty. Dark.",
+   "img": "c13_dark"
+  },
+  {
+   "id": "b18",
+   "say": "But the God who spoke light into the very first darkness... has not stopped speaking.",
+   "img": "m2"
+  },
+  {
+   "id": "b19",
+   "say": "The Light shines in the darkness, and the darkness has not overcome it.",
+   "verse": "John 1:5",
+   "img": "c14_dawn"
+  },
+  {
+   "id": "b20",
+   "say": "Let there be light. In you.",
+   "img": "c14_dawn"
+  }
+ ]
+}
