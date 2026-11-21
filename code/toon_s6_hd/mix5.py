@@ -110,8 +110,10 @@ SFXF = {
  "oink": lambda: sweep(500, 300, 0.25, 0.18),
 }
 for li, fr, k in E.SH.SFX: add(sfx, SFXF[k](), E.STARTS[li] + fr * E.DUR[li] - 0.03)
-for s in E.SHOTS[1:]:
-    w = lp(rng.standard_normal(int(0.18 * SR)), 0.3) * np.hanning(int(0.18 * SR)) * (0.10 if kind in ("comic", "epic", "bouncy") else 0.04); add(sfx, w, s["t0"] - 0.1)
+CUTS = [float(x) for x in os.environ["CUTS"].split(",")] if os.environ.get("CUTS") else [s["t0"] for s in E.SHOTS[1:]]
+OUTN = os.environ.get("MIXOUT", "mix")
+for c in CUTS:
+    w = lp(rng.standard_normal(int(0.18 * SR)), 0.3) * np.hanning(int(0.18 * SR)) * (0.10 if kind in ("comic", "epic", "bouncy") else 0.04); add(sfx, w, c - 0.1)
 if any(f[0] == "rain" for s in E.SHOTS for f in s.get("fx", [])):
     rg = np.zeros(n)
     for s in E.SHOTS:
@@ -127,5 +129,5 @@ mix = vo + bed; mix *= np.clip((END + 0.3 - t) / 0.5, 0, 1); mix /= np.max(np.ab
 sf.write(f"{E.D}/mix_raw.wav", mix, SR)
 sp = env_v > 0.5
 print("%s voice over bed while speaking: %.1f dB" % (SID, 20 * np.log10(np.sqrt(np.mean(vo[sp] ** 2)) / np.sqrt(np.mean(bed[sp] ** 2) + 1e-12))))
-subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{E.D}/mix_raw.wav", "-af", "loudnorm=I=-15:TP=-1.5:LRA=9", "-ar", "48000", f"{E.D}/mix.wav"], check=True)
+subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{E.D}/mix_raw.wav", "-af", "loudnorm=I=-15:TP=-1.5:LRA=9", "-ar", "48000", f"{E.D}/{OUTN}.wav"], check=True)
 print("MIX OK", E.D + "/mix.wav", round(END, 2), "s")
