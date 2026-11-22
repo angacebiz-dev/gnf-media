@@ -1,0 +1,20 @@
+{"cast": {"N": "rSLmFOTRq9g87aTxSUr6", "G": "BIDecpCwOWfm9O9hqJ2Q", "D": "B6uUx2p7cRgxseOUyP6P", "S": "OlQWvlX92ByiBPMvucf0"},
+ "lines": [
+  {"who": "N", "text": "Every morning, a giant walked into the valley.", "tag": "[dramatic, low]"},
+  {"who": "N", "text": "Over nine feet tall. Covered in bronze.", "tag": "[ominous]"},
+  {"who": "G", "text": "I defy the ranks of Israel this day! Give me a man to fight!", "tag": "[shouting, booming, mocking]", "ref": "1 Samuel 17:10"},
+  {"who": "N", "text": "And Israel's whole army? Terrified.", "tag": "[wry]"},
+  {"who": "N", "text": "Then a shepherd boy showed up, bringing bread for his brothers.", "tag": "[lighter, warm]"},
+  {"who": "D", "text": "Who is this uncircumcised Philistine, that he should defy the armies of the living God?", "tag": "[indignant, bold]", "ref": "1 Samuel 17:26"},
+  {"who": "S", "text": "You are just a boy.", "tag": "[worried, tired]", "ref": "1 Samuel 17:33"},
+  {"who": "D", "text": "The LORD, who delivered me from the claws of the lion and the bear, will deliver me from the hand of this Philistine.", "tag": "[calm, confident]", "ref": "1 Samuel 17:37"},
+  {"who": "N", "text": "No armor. Just a sling, and five smooth stones.", "tag": "[building]"},
+  {"who": "G", "text": "Am I a dog, that you come at me with sticks?", "tag": "[laughing, mocking]", "ref": "1 Samuel 17:43"},
+  {"who": "D", "text": "You come against me with sword and spear and javelin, but I come against you in the name of the LORD of Hosts!", "tag": "[shouting with courage]", "ref": "1 Samuel 17:45"},
+  {"who": "D", "text": "The battle is the LORD's!", "tag": "[shouting, fierce]", "ref": "1 Samuel 17:47"},
+  {"who": "N", "text": "David ran toward him.", "tag": "[urgent]"},
+  {"who": "N", "text": "One stone.", "tag": "[intense whisper]"},
+  {"who": "N", "text": "And he fell facedown on the ground.", "tag": "[dramatic]", "ref": "1 Samuel 17:49"},
+  {"who": "N", "text": "Not by sword or spear. By God.", "tag": "[warm, reverent]"},
+  {"who": "N", "text": "So what giant are you facing today?", "tag": "[gentle, direct]"}
+ ]}
