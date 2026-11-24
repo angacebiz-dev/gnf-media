@@ -16,7 +16,7 @@ def fetch(book, ch):
         out[int(parts[i])] = t.split(" Footnotes:")[0].strip()
     json.dump(out, open(p, "w"), ensure_ascii=False, indent=0); return out
 def norm(t): return re.sub(r"\s+", " ", t.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')).strip()
-BOOKS = {"Jonah": "jonah", "Genesis": "genesis", "Ezekiel": "ezekiel", "Job": "job", "Matthew": "matthew", "Luke": "luke", "Psalm": "psalms", "Exodus": "exodus", "Hebrews": "hebrews", "Mark": "mark", "John": "john", "Romans": "romans", "James": "james", "2 Peter": "2_peter", "1 Peter": "1_peter", "Isaiah": "isaiah", "2 Kings": "2_kings", "Nahum": "nahum", "Revelation": "revelation", "Ezra": "ezra"}
+BOOKS = {"Jonah": "jonah", "Genesis": "genesis", "Ezekiel": "ezekiel", "Job": "job", "Matthew": "matthew", "Luke": "luke", "Psalm": "psalms", "Exodus": "exodus", "Hebrews": "hebrews", "Mark": "mark", "John": "john", "Romans": "romans", "James": "james", "2 Peter": "2_peter", "1 Peter": "1_peter", "Isaiah": "isaiah", "2 Kings": "2_kings", "Nahum": "nahum", "Revelation": "revelation", "Ezra": "ezra", "1 Samuel": "1_samuel", "Daniel": "daniel", "1 Kings": "1_kings", "Philippians": "philippians", "1 Thessalonians": "1_thessalonians", "Colossians": "colossians", "Ephesians": "ephesians", "Proverbs": "proverbs", "2 Corinthians": "2_corinthians", "1 John": "1_john", "Lamentations": "lamentations", "Deuteronomy": "deuteronomy", "Joshua": "joshua", "1 Chronicles": "1_chronicles", "Leviticus": "leviticus", "Habakkuk": "habakkuk"}
 def verse_text(ref):
     m = re.match(r"^(\d? ?[A-Za-z]+) (\d+):(\d+)(?:-(\d+))?$", ref.strip())
     book, ch, v0, v1 = m.group(1), int(m.group(2)), int(m.group(3)), int(m.group(4) or m.group(3))
